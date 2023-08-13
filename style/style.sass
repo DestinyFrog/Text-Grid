@@ -1,0 +1,66 @@
+*
+    font-family: 'Courier New', Courier, monospace
+
+    margin: 0
+    padding: 0
+body
+    width: 100vw
+    height: 100vh
+
+    display: flex
+    justify-content: center
+    align-items: center
+
+    background-color: crimson
+
+$cell-size: 36px
+$main-radius: 4px
+
+#header
+    height: $cell-size
+
+    border: 1px solid aliceblue
+    border-bottom: 0
+    border-top-left-radius: $main-radius
+    border-top-right-radius: $main-radius
+
+    background-color: green
+
+    display: flex
+    justify-content: center
+
+    div
+        width: $cell-size
+        aspect-ratio: 1/1
+
+        border: 0
+        border-left: 1px solid aliceblue
+        border-right: 1px solid aliceblue
+
+        font-size: 24px
+        text-align: center
+
+        background-color: #333
+#content
+    display: grid
+
+    width: auto
+    height: auto
+
+    border-bottom-left-radius: $main-radius
+    border-bottom-right-radius: $main-radius
+    overflow: hidden
+
+.cell
+    width: $cell-size
+    aspect-ratio: 1/1
+
+    font-size: 26px
+    text-align: center
+
+    cursor: pointer
+
+    background-color: #222
+    border: 1px solid aliceblue
+.cell:hover
+    background-color: #aaa
